@@ -25,6 +25,35 @@
         #btns {
             padding-left: 30px;
         }
+        @keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    color: #ff0000;
+  }
+  25% {
+    text-shadow: 0 0 5px #ff7f00, 0 0 20px #ff7f00, 0 0 30px #ff7f00, 0 0 40px #ff7f00, 0 0 50px #ff7f00, 0 0 60px #ff7f00, 0 0 70px #ff7f00;
+    color: #ff7f00;
+  }
+  50% {
+    text-shadow: 0 0 5px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    color: #00ff00;
+  }
+  75% {
+    text-shadow: 0 0 5px #007fff, 0 0 20px #007fff, 0 0 30px #007fff, 0 0 40px #007fff, 0 0 50px #007fff, 0 0 60px #007fff, 0 0 70px #007fff;
+    color: #007fff;
+  }
+  100% {
+    text-shadow: 0 0 5px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff;
+    color: #0000ff;
+  }
+}
+
+#abcd {
+  font-size: 28px; /* Adjust the size as needed */
+  animation: glowing 5s infinite alternate;
+  text-align: center;
+}
+
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/quartz/bootstrap.min.css" rel="stylesheet">
 
@@ -34,12 +63,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-    <h1 class="coolhead">Aarav's Book Table</h1>
+    <h1 id="abcd">Aarav's Book Table</h1>
     <div class="container mt-3">
 
-        <table class="table table-hover tabel-striped">
-            <thead class="thead-dark">
-                <tr>
+        <table id=""  class="  table table-hover tabel-striped ">
+            <thead class="thead-light">
+                <tr class="table">
                     <th>#</th>
                     <th>Title</th>
                     <th>Start</th>
